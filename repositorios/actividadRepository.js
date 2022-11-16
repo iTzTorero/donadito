@@ -5,7 +5,6 @@ class actividadRepository{
         const actividad = await modelo.findAll();
         return actividad;
     }
-
     async findOneById(idactividad){
         const actividad = await modelo.findOne({
             where: {idactividad: idactividad}
@@ -13,7 +12,6 @@ class actividadRepository{
 
         return actividad;
     }
-
     async add(actividad){
         actividad.idactividad = 0;
         return( await actividad.save());
@@ -30,8 +28,6 @@ class actividadRepository{
     async delete(actividad){
         return (await actividad.destroy());
     }
-
-
 }
 
 module.exports = actividadRepository;
