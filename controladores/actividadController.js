@@ -66,4 +66,9 @@ class actividadController {
         res.json({deleted: true}, 200);
     }
 }
+
+
+    //ola qu haces toi viendo un tuto nomas q se consulta con un id
+
+
 module.exports = actividadController;

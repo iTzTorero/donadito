@@ -5,7 +5,7 @@ const cors = require('cors');
 
 function spawnServer(){
     const app = express();
-    const port = 8081;
+    const port = 8082;
 
     //Configuracion cors
     //app.use(cors());
@@ -21,7 +21,8 @@ function spawnServer(){
 
     //Middleware errores
     app.use((err, req, res, next) => {
-        res.json({message: 'Internal server error.'}, 500);
+        //res.json({message: 'Internal server error.'}, 500);
+        res.status(500).json({message: 'Internal server error.'})
     })
 
     registerRoutes(app);

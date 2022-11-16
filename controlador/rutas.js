@@ -11,7 +11,7 @@ const registerRoutes = (app) => {
 
     //endpoint default
     app.get('/', async (req, res) => {
-        res.sendFile(path.resolve('vista/registro.html'));
+        res.sendFile(path.resolve('vista/consultarDonaciones.html'));
     });
 
     app.get('/solicitud/:id', solicitud.find);
