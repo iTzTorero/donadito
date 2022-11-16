@@ -1,0 +1,23 @@
+{
+    "development": {
+        "username": "root",
+        "password": "58255Val",
+        "database": "donadito",
+        "host": "localhost",
+        "dialect": "mysql"
+    },
+    "test": {
+        "username": "root",
+        "password": "58255Val",
+        "database": "donadito",
+        "host": "localhost",
+        "dialect": "mysql"
+    },
+    "production": {
+        "username": "root",
+        "password": "58255Val",
+        "database": "donadito",
+        "host": "localhost",
+        "dialect": "mysql"
+    }
+  }
