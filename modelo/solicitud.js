@@ -1,7 +1,7 @@
 const { DataTypes } = require("sequelize");
 const { sequelize } = require("./conexion");
 
-const actividad = sequelize.define("solicitud",{
+const solicitud = sequelize.define("solicitud",{
     idsolicitud:{
         type: DataTypes.INTEGER,
         primaryKey : true

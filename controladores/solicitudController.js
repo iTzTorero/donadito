@@ -1,7 +1,7 @@
-const solicitudRepository = require('../repositorios/solicitudRepository.js');
+const SolicitudRepository = require('../repositorios/solicitudRepository.js');
 const solicitudModelo = require('../modelo/solicitud.js');
 
-const solicitudRepository = new solicitudRepository();
+const solicitudRepository = new SolicitudRepository();
 
 class solicitudController {
     async find(req, res){

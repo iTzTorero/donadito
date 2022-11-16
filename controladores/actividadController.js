@@ -1,7 +1,7 @@
-const actividadRepository = require('../repositorios/actividadRepository.js');
+const ActividadRepository = require('../repositorios/actividadRepository.js');
 const actividadModelo = require('../modelo/actividad.js');
 
-const actividadRepository = new actividadRepository();
+const actividadRepository = new ActividadRepository();
 
 class actividadController {
     async find(req, res){

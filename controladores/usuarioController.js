@@ -1,7 +1,7 @@
-const usuarioRepository = require('../repositorios/usuarioRepository.js');
+const UsuarioRepository = require('/Users/itztorero/Documents/Documents/VS/topicos/donadito/repositorios/usuarioRepository.js');
 const usuarioModelo = require('../modelo/usuario.js');
 
-const usuarioRepository = new usuarioRepository();
+const usuarioRepository = new UsuarioRepository();
 
 class usuarioController {
     async find(req, res){

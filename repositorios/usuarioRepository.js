@@ -2,12 +2,12 @@ const modelo = require('../modelo/usuario.js');
 
 class usuarioRepository{
     async findAll(){
-        const usuario = await usuario.findAll();
+        const usuario = await modelo.findAll();
         return usuario;
     }
-
-    async findOneById(idPedido){
-        const usuario = await usuario.findOne({
+  
+    async findOneById(idusuario){
+        const usuario = await modelo.findOne({
             where: {idusuario: idusuario}
         });
 

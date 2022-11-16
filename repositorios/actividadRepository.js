@@ -2,12 +2,12 @@ const modelo = require('../modelo/actividad.js');
 
 class actividadRepository{
     async findAll(){
-        const actividad = await actividad.findAll();
+        const actividad = await modelo.findAll();
         return actividad;
     }
 
     async findOneById(idactividad){
-        const actividad = await actividad.findOne({
+        const actividad = await modelo.findOne({
             where: {idactividad: idactividad}
         });
 
