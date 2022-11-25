@@ -70,7 +70,16 @@
               <div class="table-responsive border_table">
                 <table id=tablaActividad class="table table-striped table tablesorter">
                   <thead class="thead-dark">
-                    <script>
+                    <tr>
+                      <th style="font-size: 14px;" class="text-center">ID Solicitud</th>
+                      <th style="font-size: 14px;" class="text-center">Estado</th>
+                      <th style="font-size: 14px;" class="text-center">Detalle</th>
+                      <th style="font-size: 14px;" class="text-center">Nombre donador</th>
+                      <th style="font-size: 14px;" class="text-center">Organismo</th>
+                      <th style="font-size: 14px;" class="text-center">Fecha</th>
+                      <th style="font-size: 14px;" class="text-center filter-false sorter-false"></th>
+                    </tr>
+                    <!--<script>
                       cargarDatos()
                       function cargarDatos() {
                         fetch('/actividad', {
@@ -102,7 +111,7 @@
                             }
                           })
                       }
-                    </script>
+                    </script> -->
                   </thead>
                   <!-- <thead class="thead-dark">
                     <tr class="table_top_color">
@@ -114,8 +123,15 @@
                       <th style="font-size: 14px;" class="text-center">Fecha</th>
                       <th style="font-size: 14px;" class="text-center filter-false sorter-false">Acciones</th>
                     </tr>
-                  </thead>
-                  <tbody class="text-center"> -->
+                  </thead> -->
+                  <tbody id="tbody" class="text-center">
+                    <td style="font-size: 13px;" >Aquí va el id</td>
+                    <td style="font-size: 13px;" >Aqui va el estado</td>
+                    <td style="font-size: 13px;" >Aquí va el detalle</td>
+                    <td style="font-size: 13px;" >Aquí va el nombre del donador</td>
+                    <td style="font-size: 13px;" >Aqui va el nombre del organismo</td>
+                    <td style="font-size: 13px;" >Aqui va la fecha</td>
+                    <td style="font-size: 13px;" >Aqui van las acciones</td>
                   <!-- aquí va el for para las consultas de la tabla -->
                   <!-- <tr>
                       <td style="font-size: 13px;">id actividad</td>
@@ -205,6 +221,7 @@
         </div>
       </div>
     </div>
+    <script src ="scripts/TablaDonaciones.js"></script>
 
 </body>
 

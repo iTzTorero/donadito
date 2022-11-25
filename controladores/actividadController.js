@@ -68,7 +68,6 @@ class actividadController {
 }
 
 
-    //ola qu haces toi viendo un tuto nomas q se consulta con un id
 
 
 module.exports = actividadController;
