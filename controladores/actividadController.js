@@ -24,10 +24,15 @@ class actividadController {
 
     async add(req, res) {
         const actividad = new actividadModelo();
+        console.log(req.body);
         actividad.idactividad = 0;
-        actividad.idsolicitud = req.body.idsolicitud;
+        actividad.idsolicitud = 5;
+        actividad.nombreDonador = req.body.nombreDonador;
         actividad.estado = req.body.estado;
-        actividad.detalle = req.body.detalle;
+            actividad.detalle = req.body.detalle;
+            actividad.correo = req.body.correo;
+            actividad.telefono = req.body.telefono;
+            actividad.direccion = req.body.direccion;
 
         await actividadRepository.add(actividad);
 

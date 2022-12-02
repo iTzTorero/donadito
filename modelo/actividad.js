@@ -7,8 +7,12 @@ const actividad = sequelize.define("actividad",{
         primaryKey : true
     },
     idsolicitud: { type: DataTypes.INTEGER},
+    nombreDonador : { type: DataTypes.STRING},
     estado : { type: DataTypes.STRING},
     detalle : { type: DataTypes.STRING},
+    telefono : { type: DataTypes.STRING},
+    correo : { type: DataTypes.STRING},
+    direccion : { type: DataTypes.STRING},
 },{
     tableName: 'actividad',
     createdAt: false,

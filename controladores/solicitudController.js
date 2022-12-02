@@ -25,9 +25,12 @@ class solicitudController {
     async add(req, res) {
         const solicitud = new solicitudModelo();
         solicitud.idsolicitud = 0;
-        solicitud.iddonador = req.body.iddonador;
-        solicitud.idorganismo = req.body.idorganismo;
-        solicitud.descripcion = req.body.descripcion;
+        solicitud.nombreDonador = req.body.nombreDonador;
+        solicitud.nombreOrganismo = req.body.nombreOrganismo;
+        solicitud.direccion = req.body.direccion;
+        solicitud.telefono = req.body.telefono;
+        solicitud.correo = req.body.correo;
+        solicitud.detalle = req.body.detalle;
 
         await solicitudRepository.add(solicitud);
 

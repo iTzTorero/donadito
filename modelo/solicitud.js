@@ -6,9 +6,12 @@ const solicitud = sequelize.define("solicitud",{
         type: DataTypes.INTEGER,
         primaryKey : true
     },
-    iddonador : { type: DataTypes.INTEGER},
-    idorganismo : { type: DataTypes.INTEGER},
-    descripcion : { type: DataTypes.STRING},
+    nombreDonador : { type: DataTypes.STRING},
+    nombreOrganismo : { type: DataTypes.STRING},
+    direccion : { type: DataTypes.STRING},
+    telefono : { type: DataTypes.STRING},
+    correo : { type: DataTypes.STRING},
+    detalle : { type: DataTypes.STRING},
 },{
     tableName: 'solicitud',
     createdAt: false,

@@ -33,7 +33,7 @@
             style="width:40px; height:40px; color:#f15d01;"><strong> Donadito.com</strong></a></h4>
       <nav id="navbar" class="navbar order-last order-lg-0 ">
         <ul style="align-items: right;">
-          <li><a class="nav-link scrollto" href="indexDonador.html">Incio</a></li>
+          <li><a class="nav-link scrollto" href="indexDonador.html">Inicio</a></li>
           <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
     </div>
@@ -50,7 +50,7 @@
 
       <div class="container align-items-center" data-aos="zoom-in">
 
-        <form action="" style="padding: 10px;" class="was-validated">
+        <form style="padding: 10px;" class="was-validated">
           <div class="container align-items-center">
             <table style="margin: 0 auto;">
               <tr>
@@ -74,7 +74,7 @@
                   <label for="tel">Teléfono </label>
                 </td>
                 <td>
-                  <input class="form-control" type="text" id="tel" name="tel" placeholder="Teléfono" required>
+                  <input class="form-control" type="text" id="telefono" name="tel" placeholder="Teléfono" required>
                 </td>
               </tr>
               <tr>
@@ -90,12 +90,9 @@
                   <label for="organismos">Donar a</label>
                 </td>
                 <td>
-                  <select class="form-control" id="organismos" name="organismos" size="1" style="width: 150px;" required>
+                  <select class="form-control" id="organismo" name="organismos" size="1" style="width: 150px;" required>
                     <option value="0">Seleccione:</option>
-                    <option value="1">Cáritas</option>
-                    <option value="2">Cruz roja</option>
-                    <option value="3">OXFAM</option>
-                    <option value="4">The Salvation Army</option>
+                    <option value="1">Fundacion Jesucristo Misericordioso</option>
                   </select>
                 </td>
               </tr>
@@ -106,16 +103,18 @@
               </tr>
               <tr>
                 <td colspan="2">
-                  <textarea class="form-control" style="text-align:left" name="message" rows="5" cols="30"></textarea>
+                  <textarea class="form-control" style="text-align:left" name="message" rows="5" id="detalle" cols="30"></textarea>
                 </td>
               </tr> 
             </table>
             <br><br>
           </div>
-          <button class="get-started-btn scrollto" data-bs-toggle="modal" data-bs-target="#myModal">
+        </form>
+        
+          <button class="get-started-btn scrollto"  id="btnCrearSolicitud">
             Crear solicitud
           </button>
-        </form>
+
 
       </div>
     </section><!-- End Clients Section -->
@@ -173,12 +172,15 @@
           <!-- Modal footer -->
           <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-            <a href="index.html"><button type="button" class="btn btn-success">Aceptar</button></a>
+            <button id="botonAceptar" type="button" class="btn btn-success">Aceptar</button>
           </div>
 
         </div>
       </div>
     </div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="scripts/RegistrarDonacion.js"></script>
 
 </body>
 

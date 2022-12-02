@@ -72,6 +72,7 @@
                   <thead class="thead-dark">
                     <tr>
                       <th style="font-size: 14px;" class="text-center">ID Solicitud</th>
+                      <th style="font-size: 14px;" class="text-center">ID Actividad</th>
                       <th style="font-size: 14px;" class="text-center">Estado</th>
                       <th style="font-size: 14px;" class="text-center">Detalle</th>
                       <th style="font-size: 14px;" class="text-center">Nombre donador</th>
@@ -125,15 +126,21 @@
                     </tr>
                   </thead> -->
                   <tbody id="tbody" class="text-center">
-                    <td style="font-size: 13px;" >Aquí va el id</td>
-                    <td style="font-size: 13px;" >Aqui va el estado</td>
-                    <td style="font-size: 13px;" >Aquí va el detalle</td>
-                    <td style="font-size: 13px;" >Aquí va el nombre del donador</td>
-                    <td style="font-size: 13px;" >Aqui va el nombre del organismo</td>
-                    <td style="font-size: 13px;" >Aqui va la fecha</td>
-                    <td style="font-size: 13px;" >Aqui van las acciones</td>
-                  <!-- aquí va el for para las consultas de la tabla -->
-                  <!-- <tr>
+                    <td style="font-size: 13px;">Aquí va el id</td>
+                    <td style="font-size: 13px;">Aqui va el estado</td>
+                    <td style="font-size: 13px;">Aquí va el detalle</td>
+                    <td style="font-size: 13px;">Aquí va el nombre del donador</td>
+                    <td style="font-size: 13px;">Aqui va el nombre del organismo</td>
+                    <td style="font-size: 13px;">Aqui va la fecha</td>
+                    <td style="font-size: 13px;">Aqui van las acciones</td>
+                    <td id="tdboton" style="font-size: 13px;">
+                      <a href="registrarActividad.html"><button class="get-started-btn scrollto">
+                          Registrar Actividad
+                        </button></a>
+                    </td>
+
+                    <!-- aquí va el for para las consultas de la tabla -->
+                    <!-- <tr>
                       <td style="font-size: 13px;">id actividad</td>
                       <td style="font-size: 13px;">estado</td>
                       <td style="font-size: 13px;">detalle</td>
@@ -153,6 +160,13 @@
             </div>
           </div>
         </div>
+        <script>
+
+          function RegistrarActividad() {
+
+          }
+
+        </script>
 
         <br><br>
       </div>
@@ -196,32 +210,137 @@
     <script src="assets/js/main.js"></script>
 
 
-    <!-- The Modal -->
-    <div class="modal" id="myModal">
+
+
+    <!-- The Modal Datos del donador -->
+    <div class="modal modal-lg" id="modalDatosDonador">
       <div class="modal-dialog">
         <div class="modal-content">
 
           <!-- Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">Registro exitoso</h4>
+            <h4 class="modal-title">Datos del donador</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
-          <!-- Modal body -->
-          <div class="modal-body">
-            ¡Se ha realizado su registro exitosamente!
-          </div>
+          <!-- Modal body  -->
+          <div class="modal-body ">
+            <section id="clients" class="form">
+              <h5 style="text-align: center; color:#f15d01">Ingresar actividad de seguimiento</h5>
+              </br></br>
+              <div class="container align-items-center" data-aos="zoom-in">
+                <form action="" style="padding: 10px;" class="was-validated">
+                  <table style="margin: 0 auto;">
+                    <tr>
+                      <td>
+                        <label for="nombre">Nombre </label>
+                      </td>
+                      <td>
+                        <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Cristina Aguilar"
+                          disabled>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="tel">Teléfono </label>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" id="tel" name="tel" placeholder="6442005656" disabled>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="dir">Dirección </label>
+                      </td>
+                      <td>
+                        <input style="width: 600px" type="text" class="form-control" id="dir" name="dir"
+                          placeholder="Conocida" disabled>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="dir">Correo Electrónico</label>
+                      </td>
+                      <td>
+                        <input style="width: 600px" type="text" class="form-control" id="responsable" name="responsable"
+                          placeholder="cristina@itson.com" disabled>
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+                <br><br>
+              </div>
 
+
+            </section>
+          </div>
           <!-- Modal footer -->
           <div class="modal-footer">
-
-            <a href="indexOrganizacion.html"><button type="button" class="btn btn-success">Aceptar</button></a>
+            <button id="btnCancelarModal" type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
           </div>
 
         </div>
       </div>
     </div>
-    <script src ="scripts/TablaDonaciones.js"></script>
+
+    <!-- The Modal Registrar Actividad -->
+    <div class="modal modal-lg" id="modalRegistrarActividad">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Registrar actividad</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body Registrar actividad -->
+          <div class="modal-body ">
+            <section id="clients" class="form">
+              <h5 style="text-align: center; color:#f15d01">Ingresar actividad de seguimiento</h5>
+              </br></br>
+              <div class="container align-items-center" data-aos="zoom-in">
+                <form action="" style="padding: 10px;" class="was-validated">
+                  <table style="margin: 0 auto;">
+                    <tr>
+                      <td style="padding: 20px; font-size:20px; text-align:right;">
+                        <label for="nombre">Estado </label>
+                      </td>
+                      <td>
+                        <input type="radio" id="donadito" name="fav_language" value="Donadito">
+                        <label for="donadito">Donadito</label>
+                        <input type="radio" id="almacen" name="fav_language" value="En almacen">
+                        <label for="almacen">En almacén</label>
+                        <input type="radio" id="domicilio" name="fav_language" value="Recogido en domicilio">
+                        <label for="domicilio">Recogido en domicilio</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 20px; font-size:20px; text-align:right;">
+                        <label for="nombre">Detalle de la actividad </label>
+                      </td>
+                      <td>
+                        <textarea style="text-align:left" name="message" rows="5" id="detalle" cols="30"></textarea>
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+                <br><br>
+              </div>
+
+            </section>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button id="btnCancelarModal" type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+            <button id="btnRegistrarActividad" type="button" class="btn btn-success">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="scripts/TablaDonaciones.js"></script>
 
 </body>
 
