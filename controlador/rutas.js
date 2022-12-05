@@ -1,6 +1,6 @@
-const solicitudController = require('/Users/itztorero/Documents/Documents/VS/topicos/donadito/controladores/solicitudController.js');
-const usuarioController = require('/Users/itztorero/Documents/Documents/VS/topicos/donadito/controladores/usuarioController.js');
-const actividadController = require('/Users/itztorero/Documents/Documents/VS/topicos/donadito/controladores/actividadController.js');
+const solicitudController = require('../controladores/solicitudController.js');
+const usuarioController = require('../controladores/usuarioController.js');
+const actividadController = require('../controladores/actividadController.js');
 
 var path = require('path');
 //endpoint default
